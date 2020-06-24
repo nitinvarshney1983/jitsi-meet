@@ -161,7 +161,7 @@ class SettingsView extends AbstractSettingsView<Props, State> {
                     </FormRow>
                     <FormSectionHeader
                         label = 'settingsView.conferenceSection' />
-                    <FormRow
+                   {/*  <FormRow
                         fieldSeparator = { true }
                         label = 'settingsView.serverURL'
                         layout = 'column'>
@@ -172,7 +172,7 @@ class SettingsView extends AbstractSettingsView<Props, State> {
                             onChangeText = { this._onChangeServerURL }
                             placeholder = { this.props._serverURL }
                             value = { serverURL } />
-                    </FormRow>
+                    </FormRow> */}
                     <FormRow
                         fieldSeparator = { true }
                         label = 'settingsView.startWithAudioMuted'>

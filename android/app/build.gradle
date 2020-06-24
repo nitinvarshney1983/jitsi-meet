@@ -17,7 +17,7 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
-        applicationId 'org.jitsi.meet'
+        applicationId 'com.candour.meet'
         versionCode vcode
         versionName project.appVersion
 
@@ -36,6 +36,12 @@ android {
             keyAlias 'androiddebugkey'
             keyPassword 'android'
         }
+        release {
+          storeFile file('candour_keystore.keystore')
+          storePassword 'candour'
+          keyAlias 'candour_keystore'
+          keyPassword 'candour'
+      }
     }
 
     buildTypes {
@@ -45,7 +51,7 @@ android {
         }
         release {
             // Uncomment the following line for singing a test release build.
-            //signingConfig signingConfigs.debug
+            signingConfig signingConfigs.release
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules-release.pro'
             buildConfigField "boolean", "GOOGLE_SERVICES_ENABLED", "${googleServicesEnabled}"

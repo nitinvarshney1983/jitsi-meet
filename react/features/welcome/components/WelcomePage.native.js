@@ -3,13 +3,14 @@ import {
     Animated,
     Keyboard,
     SafeAreaView,
-    TextInput,
+    Image,
     TouchableHighlight,
     TouchableOpacity,
     View
 } from 'react-native';
 
 import { getName } from '../../app';
+
 import { ColorSchemeRegistry } from '../../base/color-scheme';
 import { translate } from '../../base/i18n';
 import { Icon, IconMenu, IconWarning } from '../../base/icons';
@@ -24,6 +25,7 @@ import {
 import { HelpView } from '../../help';
 import { DialInSummary } from '../../invite';
 import { SettingsView } from '../../settings';
+
 import { setSideBarVisible } from '../actions';
 
 import {
@@ -31,10 +33,10 @@ import {
     _mapStateToProps as _abstractMapStateToProps
 } from './AbstractWelcomePage';
 import LocalVideoTrackUnderlay from './LocalVideoTrackUnderlay';
+import styles, { PLACEHOLDER_TEXT_COLOR } from './styles';
 import VideoSwitch from './VideoSwitch';
 import WelcomePageLists from './WelcomePageLists';
 import WelcomePageSideBar from './WelcomePageSideBar';
-import styles, { PLACEHOLDER_TEXT_COLOR } from './styles';
 
 /**
  * The native container rendering the welcome page.
@@ -284,33 +286,7 @@ class WelcomePage extends AbstractWelcomePage {
                         <VideoSwitch />
                     </Header>
                     <SafeAreaView style = { styles.roomContainer } >
-                        <View style = { styles.joinControls } >
-                            <Text style = { styles.enterRoomText }>
-                                { t('welcomepage.roomname') }
-                            </Text>
-                            <TextInput
-                                accessibilityLabel = { t(roomnameAccLabel) }
-                                autoCapitalize = 'none'
-                                autoComplete = 'off'
-                                autoCorrect = { false }
-                                autoFocus = { false }
-                                onBlur = { this._onFieldBlur }
-                                onChangeText = { this._onRoomChange }
-                                onFocus = { this._onFieldFocus }
-                                onSubmitEditing = { this._onJoin }
-                                placeholder = { this.state.roomPlaceholder }
-                                placeholderTextColor = { PLACEHOLDER_TEXT_COLOR }
-                                returnKeyType = { 'go' }
-                                style = { styles.textInput }
-                                underlineColorAndroid = 'transparent'
-                                value = { this.state.room } />
-                            {
-                                this._renderInsecureRoomNameWarning()
-                            }
-                            {
-                                this._renderHintBox()
-                            }
-                        </View>
+                        <Image source={require('./Welcome.png')} />
                     </SafeAreaView>
                     <WelcomePageLists disabled = { this.state._fieldFocused } />
                 </View>
