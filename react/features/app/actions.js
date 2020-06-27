@@ -1,7 +1,7 @@
 // @flow
 
+import jwtDecode from 'jwt-decode';
 import type { Dispatch } from 'redux';
-
 import { setRoom } from '../base/conference';
 import {
     configWillLoad,
@@ -12,6 +12,7 @@ import {
     storeConfig
 } from '../base/config';
 import { connect, disconnect, setLocationURL } from '../base/connection';
+import { parseJWTFromURLParams } from '../base/jwt';
 import { loadConfig } from '../base/lib-jitsi-meet';
 import { MEDIA_TYPE } from '../base/media';
 import { toState } from '../base/redux';
@@ -129,7 +130,23 @@ export function appNavigate(uri: ?string) {
 
         dispatch(setLocationURL(locationURL));
         dispatch(setConfig(config));
-        dispatch(setRoom(room));
+
+        const jwt = parseJWTFromURLParams(locationURL);
+
+        if (jwt) {
+            const jwtPayload = jwtDecode(jwt);
+
+            if (jwtPayload) {
+                const newroom = jwtPayload.room;
+
+                dispatch(setRoom(newroom));
+            } else {
+                dispatch(setRoom(room));
+            }
+
+        } else {
+            dispatch(setRoom(room));
+        }
 
         // FIXME: unify with web, currently the connection and track creation happens in conference.js.
         if (room && navigator.product === 'ReactNative') {
