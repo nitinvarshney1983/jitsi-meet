@@ -6,7 +6,8 @@ import {
     Image,
     TouchableHighlight,
     TouchableOpacity,
-    View
+    View,
+    Dimensions
 } from 'react-native';
 
 import { getName } from '../../app';
@@ -273,6 +274,7 @@ class WelcomePage extends AbstractWelcomePage {
     _renderFullUI() {
         const roomnameAccLabel = 'welcomepage.accessibilityLabel.roomname';
         const { _headerStyles, t } = this.props;
+        const { width, height } = Dimensions.get('window');
 
         return (
             <LocalVideoTrackUnderlay style = { styles.welcomePage }>
@@ -286,9 +288,11 @@ class WelcomePage extends AbstractWelcomePage {
                         <VideoSwitch />
                     </Header>
                     <SafeAreaView style = { styles.roomContainer } >
-                        <Image source={require('./Welcome.png')} />
+                        <Image
+                            source = { require('./Welcome.png') }
+                            style = { { width:width, height:height } }/>
                     </SafeAreaView>
-                    <WelcomePageLists disabled = { this.state._fieldFocused } />
+                     {/* <WelcomePageLists disabled = { this.state._fieldFocused } /> */}
                 </View>
                 <WelcomePageSideBar />
                 { this._renderWelcomePageModals() }
