@@ -17,7 +17,7 @@
 		0BD6B4381EF82A6B00D1F4CD /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0BD6B4361EF82A6B00D1F4CD /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0BEA5C291F7B8F73000D0AB4 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BEA5C271F7B8F73000D0AB4 /* Interface.storyboard */; };
 		0BEA5C2B1F7B8F73000D0AB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BEA5C2A1F7B8F73000D0AB4 /* Assets.xcassets */; };
-		0BEA5C321F7B8F73000D0AB4 /* JitsiMeetCompanion Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0BEA5C311F7B8F73000D0AB4 /* JitsiMeetCompanion Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0BEA5C321F7B8F73000D0AB4 /* Can Meet Companion Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0BEA5C311F7B8F73000D0AB4 /* Can Meet Companion Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0BEA5C371F7B8F73000D0AB4 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEA5C361F7B8F73000D0AB4 /* InterfaceController.swift */; };
 		0BEA5C391F7B8F73000D0AB4 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEA5C381F7B8F73000D0AB4 /* ExtensionDelegate.swift */; };
 		0BEA5C3B1F7B8F73000D0AB4 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEA5C3A1F7B8F73000D0AB4 /* ComplicationController.swift */; };
@@ -69,7 +69,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				0BEA5C321F7B8F73000D0AB4 /* JitsiMeetCompanion Extension.appex in Embed App Extensions */,
+				0BEA5C321F7B8F73000D0AB4 /* Can Meet Companion Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,13 +101,13 @@
 		0BEA5C281F7B8F73000D0AB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		0BEA5C2A1F7B8F73000D0AB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BEA5C2C1F7B8F73000D0AB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0BEA5C311F7B8F73000D0AB4 /* JitsiMeetCompanion Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "JitsiMeetCompanion Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BEA5C311F7B8F73000D0AB4 /* Can Meet Companion Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Can Meet Companion Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BEA5C361F7B8F73000D0AB4 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		0BEA5C381F7B8F73000D0AB4 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		0BEA5C3A1F7B8F73000D0AB4 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		0BEA5C3C1F7B8F73000D0AB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BEA5C3E1F7B8F73000D0AB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* jitsi-meet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "jitsi-meet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07F961A680F5B00A75B9A /* Can Meet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Can Meet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -235,9 +235,9 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* jitsi-meet.app */,
+				13B07F961A680F5B00A75B9A /* Can Meet.app */,
 				0BEA5C251F7B8F73000D0AB4 /* JitsiMeetCompanion.app */,
-				0BEA5C311F7B8F73000D0AB4 /* JitsiMeetCompanion Extension.appex */,
+				0BEA5C311F7B8F73000D0AB4 /* Can Meet Companion Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -277,7 +277,7 @@
 			);
 			name = "JitsiMeetCompanion Extension";
 			productName = "JitsiMeetCompanion Extension";
-			productReference = 0BEA5C311F7B8F73000D0AB4 /* JitsiMeetCompanion Extension.appex */;
+			productReference = 0BEA5C311F7B8F73000D0AB4 /* Can Meet Companion Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
 		13B07F861A680F5B00A75B9A /* jitsi-meet */ = {
@@ -305,7 +305,7 @@
 			);
 			name = "jitsi-meet";
 			productName = "Jitsi Meet";
-			productReference = 13B07F961A680F5B00A75B9A /* jitsi-meet.app */;
+			productReference = 13B07F961A680F5B00A75B9A /* Can Meet.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -314,6 +314,9 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
@@ -613,7 +616,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				IBSC_MODULE = JitsiMeetCompanion_Extension;
 				INFOPLIST_FILE = watchos/app/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = org.jitsi.meet.watchkit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.candour.meet.watchkit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -648,7 +651,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				IBSC_MODULE = JitsiMeetCompanion_Extension;
 				INFOPLIST_FILE = watchos/app/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = org.jitsi.meet.watchkit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.candour.meet.watchkit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -680,8 +683,8 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = watchos/extension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.jitsi.meet.watchkit.extension;
-				PRODUCT_NAME = "${TARGET_NAME}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.candour.meet.watchkit.extension;
+				PRODUCT_NAME = "Can Meet Companion Extension";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -714,8 +717,8 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = watchos/extension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.jitsi.meet.watchkit.extension;
-				PRODUCT_NAME = "${TARGET_NAME}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.candour.meet.watchkit.extension;
+				PRODUCT_NAME = "Can Meet Companion Extension";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -730,7 +733,7 @@
 			baseConfigurationReference = 4670A512A688E2DC34528282 /* Pods-jitsi-meet.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconDebug;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconRelease;
 				CODE_SIGN_ENTITLEMENTS = app.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -749,13 +752,14 @@
 				INFOPLIST_FILE = src/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MARKETING_VERSION = 1.0.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.jitsi.meet;
-				PRODUCT_NAME = "jitsi-meet";
+				PRODUCT_BUNDLE_IDENTIFIER = com.candour.meet;
+				PRODUCT_NAME = "Can Meet";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
@@ -783,13 +787,14 @@
 				INFOPLIST_FILE = src/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MARKETING_VERSION = 1.0.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.jitsi.meet;
-				PRODUCT_NAME = "jitsi-meet";
+				PRODUCT_BUNDLE_IDENTIFIER = com.candour.meet;
+				PRODUCT_NAME = "Can Meet";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
